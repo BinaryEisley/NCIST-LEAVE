@@ -1,0 +1,431 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0049)mhtml:file://C:\Users\碳酸钠泥马\Desktop\bt.mhtml -->
+<HTML class="no-touch pixel-ratio-2 retina android android-6 android-6-0" 
+manifest="http://eip.ncist.edu.cn/EIP/weixin/weui/lib.appcache"><HEAD><META 
+content="IE=7.0000" http-equiv="X-UA-Compatible">
+<TITLE>处理表单</TITLE>
+<META content="text/html; charset=UTF-8" http-equiv=Content-Type><LINK 
+rel=stylesheet type=text/css 
+href="cid:css-ac3bb559-7911-4ab0-ae30-47986d21b57f@mhtml.blink"><LINK 
+rel=stylesheet type=text/css 
+href="cid:css-4e25d762-368d-45b8-84d1-30f2514fcb15@mhtml.blink"><LINK 
+rel=stylesheet type=text/css 
+href="cid:css-bba88da9-1403-4bbd-b1d6-4285c20264ae@mhtml.blink">
+<META http-equiv=Content-Type>
+<META name=format-detection content=telephone=no>
+<META name=viewport 
+content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"><!-- apple devices fullscreen -->
+<META name=apple-mobile-web-app-capable content=yes>
+<META name=apple-mobile-web-app-status-bar-style content=black-translucent><!-- apple devices fullscreen@end -->
+<META content="text/html; charset=utf-8"><!-- 清除浏览器缓存 -->
+
+	<META http-equiv="pragma" content="no-cache">
+    <META http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <META http-equiv="expires" content="0">
+	<meta http-equiv="Cache" content="no-cache">
+<LINK rel=stylesheet 
+href="http://eip.ncist.edu.cn/EIP/weixin/weui/css/cooperate.css?bust=1609207288904"><LINK 
+rel=stylesheet type=text/css 
+href="http://eip.ncist.edu.cn/EIP//core/viewer/1.1.0/viewer.min.css">
+<META name=GENERATOR content="MSHTML 11.00.10570.1001">
+
+</HEAD>
+<BODY class="all-background-color all-border-top">
+<!-- <script src="https://lib.baomitu.com/vue/2.6.12/vue.common.dev.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<DIV
+     style="HEIGHT: 500px; BACKGROUND: url(./img/loading.gif) no-repeat center center; DISPLAY: none"
+data-role="page"></DIV>
+<DIV class="weui_toast weui_loading_toast">
+<DIV class=weui_loading>
+<DIV class="weui_loading_leaf weui_loading_leaf_0"></DIV>
+<DIV class="weui_loading_leaf weui_loading_leaf_1"></DIV>
+<DIV class="weui_loading_leaf weui_loading_leaf_2"></DIV>
+<DIV class="weui_loading_leaf weui_loading_leaf_3"></DIV>
+<DIV class="weui_loading_leaf weui_loading_leaf_4"></DIV>
+<DIV class="weui_loading_leaf weui_loading_leaf_5"></DIV>
+<DIV class="weui_loading_leaf weui_loading_leaf_6"></DIV>
+<DIV class="weui_loading_leaf weui_loading_leaf_7"></DIV>
+<DIV class="weui_loading_leaf weui_loading_leaf_8"></DIV>
+<DIV class="weui_loading_leaf weui_loading_leaf_9"></DIV>
+<DIV class="weui_loading_leaf weui_loading_leaf_10"></DIV>
+<DIV class="weui_loading_leaf weui_loading_leaf_11"></DIV></DIV>
+<P class=weui_toast_content>正在加载...</P></DIV>
+<DIV id=detail-view class="cooperate-detail-view ui-page-active"
+style="HEIGHT: 100%; MIN-HEIGHT: 100%; DISPLAY: block" data-role="page"> 
+<DIV id=detail-header-view>
+<DIV class="weui_navbar "><A id=btn-base 
+class="weui_navbar_item weui_bar_item_on">处理表单 </A><A id=btn-form 
+class="weui_navbar_item ">表单预览 </A><A id=btn-flow class=weui_navbar_item>查看流程 
+</A></DIV>
+<DIV class="weui_panel weui_panel_access" style="MARGIN-TOP: 50px">
+<DIV id=btn-block class=" weui_panel_bd"><A
+        id = "timejs"
+        class="weui_media_box weui_media_appmsg">
+<DIV class=weui_media_hd style="align-self: baseline"><IMG id=starter-icon 
+class=list-item-img src="https://i.loli.net/2021/11/14/bfRrXu3ewj6CqI7.jpg"> </DIV>
+<DIV class=weui_media_bd >
+<H4 id=title class=weui_media_title 
+style="WHITE-SPACE: normal; FONT-WEIGHT: bold">疫情防控期间学生离校请假表</H4>
+<P class=weui_media_desc><SPAN id=starterName
+style="TEXT-DECORATION: underline; COLOR: #3fb0fb">{{xm}}</SPAN>&nbsp;&nbsp;<SPAN 
+id=startTime>2021-{{month}}-{{day>1?(day<11?"0"+(day-1):(day-1)):"0"+day}} 08:27</SPAN> </P>
+<P class=weui_media_desc>角色:学生 </P>
+<P class=weui_media_desc>姓名: {{xm}} </P>
+<P class=weui_media_desc>学院: 华北科技学院本科生,电子信息工程学院,电子信息工程(03014),{{bj}}</P>
+<P class=weui_media_desc>班级: {{bj}}</P>
+<P class=weui_media_desc>手机: 17646584365 </P>
+<P class=weui_media_desc>离校原因: 去中美医院看病，胃炎需要做胃镜</P>
+<P class=weui_media_desc>离校去向: 中美医院</P>
+<P class=weui_media_desc>请假天数: {{day>1?3:2}}</P>
+<P class=weui_media_desc>开始时间: 2021-{{month}}-{{day>1?(day<11?"0"+(day-1):(day-1)):"0"+day}} 08:27</P>
+<P class=weui_media_desc>结束时间: 2021-{{month}}-{{day<9?"0"+(day+1):(day+1)}} 22:50</P>
+<P class=weui_media_desc>紧急联系人: 于腾 17656743453</P>
+<P class=weui_media_desc>请假人: {{xm}}</P>
+<P class=weui_media_desc>日期时间: 2021-{{month}}-{{day>1?(day<11?"0"+(day-1):(day-1)):"0"+day}} 08:27</P>
+<P class=weui_media_desc>学号:201904024611</P>
+<P id=remark class=weui_media_desc 
+style="DISPLAY: none; -webkit-line-clamp: 10"></P></DIV>
+<DIV id=dv-status class=c-cooperate-status-end>已办结</DIV></A></DIV><A 
+id=btn-show-detail class=weui_panel_ft>表单预览</A> <A id=btn-show-code 
+class=weui_panel_ft>二维码</A> </DIV></DIV>
+<DIV id=detail-content-view style="PADDING-BOTTOM: 75px">
+<DIV id=dv-img-upload 
+style="PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT: 15px; MARGIN: 10px 0px; DISPLAY: none; PADDING-RIGHT: 15px; BACKGROUND-COLOR: white"></DIV>
+<DIV id=dv-attachment style="BACKGROUND: #fff"></DIV>
+<DIV id=dv-forms>
+<DIV id=smart-form-view style="MARGIN-BOTTOM: 70px">
+<DIV id=form-item-view>
+<DIV class=weui_cells_title><IMG class=form-title-icon 
+src='https://i.loli.net/2021/11/14/SFToLnNV2v5Omlb.png'> 学生离校请假申请审批表 </DIV>
+<DIV class="weui_cells weui_cells_form">
+<DIV id=datetimepicker class=form-filed-common>
+<DIV class="weui_cells_title must-input-title"><SPAN 
+class=must-input-field>※</SPAN> 销假时间 </DIV>
+<DIV id=title-warn-msg class=ht_warn_msg style="DISPLAY: none"></DIV>
+<DIV class="weui_cell weui_cell_primary"><INPUT id=HT6D9AA2 class=weui_input 
+style="TEXT-ALIGN: left" readOnly name=HT6D9AA2 placeholder="请输入销假时间"> 
+</DIV></DIV>
+<DIV class="form-filed-common not-allow-input" style="DISPLAY: none">
+<DIV class=weui_cell>
+<DIV class=weui_cell_hd><LABEL class="weui_label " 
+style="FONT-SIZE: 16px; COLOR: #666">校领导意见 </LABEL></DIV>
+<DIV class="weui_cell_bd weui_cell_primary"><INPUT id=HT71FE2D class=weui_input 
+style="TEXT-ALIGN: left" readOnly name=HT71FE2D placeholder="请输入校领导意见"> 
+</DIV></DIV>
+<DIV id=title-warn-msg class=ht_warn_msg 
+style="MARGIN-TOP: -5px; DISPLAY: none"></DIV></DIV>
+<DIV class="form-filed-common not-allow-input" style="DISPLAY: none">
+<DIV class=weui_cell>
+<DIV class=weui_cell_hd><LABEL class="weui_label must-input-title" 
+style="FONT-SIZE: 16px; COLOR: #666"><SPAN class=must-input-field>※</SPAN> 姓名 
+</LABEL></DIV>
+<DIV class="weui_cell_bd weui_cell_primary"><INPUT id=XingMing class=weui_input 
+style="TEXT-ALIGN: center" readOnly name=XingMing placeholder="请输入姓名"> 
+</DIV></DIV>
+<DIV id=title-warn-msg class=ht_warn_msg 
+style="MARGIN-TOP: -5px; DISPLAY: none"></DIV></DIV>
+<DIV class="form-filed-common not-allow-input" style="DISPLAY: none">
+<DIV class=weui_cell>
+<DIV class=weui_cell_hd><LABEL class="weui_label must-input-title" 
+style="FONT-SIZE: 16px; COLOR: #666"><SPAN class=must-input-field>※</SPAN> 学院 
+</LABEL></DIV>
+<DIV class="weui_cell_bd weui_cell_primary"><INPUT id=XueYuan class=weui_input 
+style="TEXT-ALIGN: center" readOnly name=XueYuan placeholder="请输入学院"> 
+</DIV></DIV>
+<DIV id=title-warn-msg class=ht_warn_msg 
+style="MARGIN-TOP: -5px; DISPLAY: none"></DIV></DIV>
+<DIV class="form-filed-common not-allow-input" style="DISPLAY: none">
+<DIV class=weui_cell>
+<DIV class=weui_cell_hd><LABEL class="weui_label must-input-title" 
+style="FONT-SIZE: 16px; COLOR: #666"><SPAN class=must-input-field>※</SPAN> 班级 
+</LABEL></DIV>
+<DIV class="weui_cell_bd weui_cell_primary"><INPUT id=BanJi class=weui_input 
+style="TEXT-ALIGN: center" readOnly name=BanJi placeholder="请输入班级"> </DIV></DIV>
+<DIV id=title-warn-msg class=ht_warn_msg 
+style="MARGIN-TOP: -5px; DISPLAY: none"></DIV></DIV>
+<DIV class="form-filed-common not-allow-input" style="DISPLAY: none">
+<DIV class=weui_cell>
+<DIV class=weui_cell_hd><LABEL class="weui_label must-input-title" 
+style="FONT-SIZE: 16px; COLOR: #666"><SPAN class=must-input-field>※</SPAN> 手机 
+</LABEL></DIV>
+<DIV class="weui_cell_bd weui_cell_primary"><INPUT id=ShouJi class=weui_input 
+style="TEXT-ALIGN: center" readOnly name=ShouJi placeholder="请输入手机"> 
+</DIV></DIV>
+<DIV id=title-warn-msg class=ht_warn_msg 
+style="MARGIN-TOP: -5px; DISPLAY: none"></DIV></DIV>
+<DIV id=textarea class="form-filed-common not-allow-input" 
+style="DISPLAY: none">
+<DIV class="weui_cells_title must-input-title"><SPAN 
+class=must-input-field>※</SPAN> 离校原因 </DIV>
+<DIV id=title-warn-msg class=ht_warn_msg style="DISPLAY: none"></DIV>
+<DIV class="weui_cells_form form-title">
+<DIV class=weui_cell>
+<DIV class="weui_cell_bd weui_cell_primary"><TEXTAREA id=HT8E54FB class="weui_textarea " style="TEXT-ALIGN: left" rows=3 readOnly name=HT8E54FB placeholder="请输入离校原因"></TEXTAREA> 
+</DIV></DIV></DIV></DIV>
+<DIV class="form-filed-common not-allow-input" style="DISPLAY: none">
+<DIV class=weui_cell>
+<DIV class=weui_cell_hd><LABEL class="weui_label must-input-title" 
+style="FONT-SIZE: 16px; COLOR: #666"><SPAN class=must-input-field>※</SPAN> 请假天数 
+</LABEL></DIV>
+<DIV class="weui_cell_bd weui_cell_primary"><INPUT id=HT3A786D class=weui_input 
+style="TEXT-ALIGN: left" readOnly name=HT3A786D placeholder="请输入请假天数"> 
+</DIV></DIV>
+<DIV id=title-warn-msg class=ht_warn_msg 
+style="MARGIN-TOP: -5px; DISPLAY: none"></DIV></DIV>
+<DIV id=datepicker class="form-filed-common not-allow-input" 
+style="DISPLAY: none">
+<DIV class="weui_cells_title must-input-title"><SPAN 
+class=must-input-field>※</SPAN> 开始时间 </DIV>
+<DIV id=title-warn-msg class=ht_warn_msg style="DISPLAY: none"></DIV>
+<DIV class="weui_cell weui_cell_primary"><INPUT id=HTFC6439 class=weui_input 
+style="TEXT-ALIGN: left" readOnly value=2021-{{month}}-{{day>1?(day<11?"0"+(day-1):(day-1)):"0"+day}} name=HTFC6439
+placeholder="请输入开始时间"> </DIV></DIV>
+<DIV id=datepicker class="form-filed-common not-allow-input" 
+style="DISPLAY: none">
+<DIV class="weui_cells_title must-input-title"><SPAN 
+class=must-input-field>※</SPAN> 结束时间 </DIV>
+<DIV id=title-warn-msg class=ht_warn_msg style="DISPLAY: none"></DIV>
+<DIV class="weui_cell weui_cell_primary"><INPUT id=HT6FCFD2 class=weui_input 
+style="TEXT-ALIGN: left" readOnly value=2021-{{month}}-{{day>1?(day<11?"0"+(day-1):(day-1)):"0"+day}} name=HT6FCFD2
+placeholder="请输入结束时间"> </DIV></DIV>
+<DIV class="form-filed-common not-allow-input" style="DISPLAY: none">
+<DIV class=weui_cell>
+<DIV class=weui_cell_hd><LABEL class="weui_label must-input-title" 
+style="FONT-SIZE: 16px; COLOR: #666"><SPAN class=must-input-field>※</SPAN> 紧急联系人 
+</LABEL></DIV>
+<DIV class="weui_cell_bd weui_cell_primary"><INPUT id=HTE0E237 class=weui_input 
+style="TEXT-ALIGN: left" readOnly name=HTE0E237 placeholder="姓名+联系电话"> 
+</DIV></DIV>
+<DIV id=title-warn-msg class=ht_warn_msg 
+style="MARGIN-TOP: -5px; DISPLAY: none"></DIV></DIV>
+<DIV class="form-filed-common not-allow-input" style="DISPLAY: none">
+<DIV class=weui_cell>
+<DIV class=weui_cell_hd><LABEL class="weui_label must-input-title" 
+style="FONT-SIZE: 16px; COLOR: #666"><SPAN class=must-input-field>※</SPAN> 请假人 
+</LABEL></DIV>
+<DIV class="weui_cell_bd weui_cell_primary"><INPUT id=HTF0799D class=weui_input 
+style="TEXT-ALIGN: left" readOnly name=HTF0799D placeholder="请输入请假人"> 
+</DIV></DIV>
+<DIV id=title-warn-msg class=ht_warn_msg 
+style="MARGIN-TOP: -5px; DISPLAY: none"></DIV></DIV>
+<DIV id=datepicker class="form-filed-common not-allow-input" 
+style="DISPLAY: none">
+<DIV class="weui_cells_title must-input-title"><SPAN 
+class=must-input-field>※</SPAN> 日期时间 </DIV>
+<DIV id=title-warn-msg class=ht_warn_msg style="DISPLAY: none"></DIV>
+<DIV class="weui_cell weui_cell_primary"><INPUT id=HT8DCC40 class=weui_input 
+style="TEXT-ALIGN: left" readOnly value=2021-{{month}}-{{day>1?(day<11?"0"+(day-1):(day-1)):"0"+day}} name=HT8DCC40
+placeholder="请输入日期时间"> </DIV></DIV>
+<DIV class="form-filed-common not-allow-input" style="DISPLAY: none">
+<DIV class=weui_cell>
+<DIV class=weui_cell_hd><LABEL class="weui_label " 
+style="FONT-SIZE: 16px; COLOR: #666">辅导员意见 </LABEL></DIV>
+<DIV class="weui_cell_bd weui_cell_primary"><INPUT id=FuDaoYuanYiJian 
+class=weui_input style="TEXT-ALIGN: left" readOnly name=FuDaoYuanYiJian 
+placeholder="请输入辅导员意见"> </DIV></DIV>
+<DIV id=title-warn-msg class=ht_warn_msg 
+style="MARGIN-TOP: -5px; DISPLAY: none"></DIV></DIV>
+<DIV class="form-filed-common not-allow-input" style="DISPLAY: none">
+<DIV class=weui_cell>
+<DIV class=weui_cell_hd><LABEL class="weui_label " 
+style="FONT-SIZE: 16px; COLOR: #666">学院意见 </LABEL></DIV>
+<DIV class="weui_cell_bd weui_cell_primary"><INPUT id=XueYuanYiJian 
+class=weui_input style="TEXT-ALIGN: left" readOnly name=XueYuanYiJian 
+placeholder="请输入学院意见"> </DIV></DIV>
+<DIV id=title-warn-msg class=ht_warn_msg 
+style="MARGIN-TOP: -5px; DISPLAY: none"></DIV></DIV>
+<DIV class="form-filed-common not-allow-input" style="DISPLAY: none">
+<DIV class=weui_cell>
+<DIV class=weui_cell_hd><LABEL class="weui_label " 
+style="FONT-SIZE: 16px; COLOR: #666">学工处意见 </LABEL></DIV>
+<DIV class="weui_cell_bd weui_cell_primary"><INPUT id=XueGongChuYiJian 
+class=weui_input style="TEXT-ALIGN: left" readOnly name=XueGongChuYiJian 
+placeholder="请输入学工处意见"> </DIV></DIV>
+<DIV id=title-warn-msg class=ht_warn_msg 
+style="MARGIN-TOP: -5px; DISPLAY: none"></DIV></DIV></DIV></DIV></DIV></DIV>
+<DIV id=dv-reply style="MARGIN-TOP: 1.17em">
+<DIV >
+<DIV class=weui_panel>
+<DIV class=weui_panel_hd ><IMG class=reply-item-img 
+src="https://i.loli.net/2021/11/14/KJspuNQI7Ljoaqz.jpg"> <A class=user-name 
+style="text-decoration: underline; color: #3fb0fb" id="dym2">
+ 龙欢</A> 
+ <A id=btn-reply class="weui_btn weui_btn_mini weui_btn_primary" style="FLOAT: right">回复</A> 
+</DIV>
+<DIV class=weui_panel_bd>
+<DIV class="weui_media_box weui_media_text" 
+style="PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px">
+<P class="weui_media_desc reply-opinions">同意，外出注意尽快返回，医院戴好口罩，尽快返回，回来后告诉我</P>
+<UL class=weui_media_info style="MARGIN-TOP: 0px">
+  <LI class=weui_media_info_meta style="COLOR: #999">已通过 </LI>
+  <LI id = "timejs2" class=weui_media_info_meta>2021-{{month}}-{{day>1?(day<11?"0"+(day-1):(day-1)):"0"+day}} 08:40 </LI>
+  <LI class=weui_media_info_meta style="FLOAT: right; PADDING-RIGHT: 0px">用时13分钟 
+  </LI></UL></DIV></DIV></DIV>
+<DIV class=weui_panel >
+<DIV class=weui_panel_hd><IMG class=reply-item-img 
+src="https://i.loli.net/2021/11/14/bfRrXu3ewj6CqI7.jpg"> <A class=user-name 
+style="TEXT-DECORATION: underline; COLOR: #3fb0fb" 
+data-user-uuid="a36b8755-58fb-4ab2-be76-5f6a9c27ef02">王江华</A> 
+ <A id=btn-reply class="weui_btn weui_btn_mini weui_btn_primary" style="FLOAT: right">回复</A> 
+</DIV>
+<DIV class=weui_panel_bd>
+<DIV class="weui_media_box weui_media_text" 
+style="PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px">
+<P class="weui_media_desc reply-opinions">收到医院的确诊证明，同意出校治疗</P>
+<P class="weui_media_desc reply-opinions"></P>
+<UL class=weui_media_info style="MARGIN-TOP: 0px">
+  <LI class=weui_media_info_meta style="COLOR: #999">已通过 </LI>
+  <LI id = "timejs3" class=weui_media_info_meta>2021-{{month}}-{{day>1?(day<11?"0"+(day-1):(day-1)):"0"+day}} 08:43 </LI>
+  <LI class=weui_media_info_meta style="FLOAT: right; PADDING-RIGHT: 0px">用时2分钟 
+  </LI></UL></DIV></DIV></DIV>
+<DIV class=weui_panel>
+<DIV  class=weui_panel_hd >
+	<IMG class=reply-item-img 
+src="https://i.loli.net/2021/11/14/bfRrXu3ewj6CqI7.jpg"> <A  class=user-name 
+style="text-decoration: underline; color: #3fb0fb" id="xm2">林刚</A> 
+ <A id=btn-reply class="weui_btn weui_btn_mini weui_btn_primary" style="FLOAT: right">回复</A> 
+</DIV>
+<DIV class=weui_panel_bd>
+<DIV class="weui_media_box weui_media_text" 
+style="PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px">
+<P class="weui_media_desc reply-opinions"></P>
+<UL class=weui_media_info style="MARGIN-TOP: 0px">
+  <LI class=weui_media_info_meta style="COLOR: #999">已通过-自动审批 </LI>
+  <LI id = "timejs4" class=weui_media_info_meta>2021-{{month}}-{{day>1?(day<11?"0"+(day-1):(day-1)):"0"+day}} 08:48 </LI>
+  <LI class=weui_media_info_meta style="FLOAT: right; PADDING-RIGHT: 0px">用时5分钟 
+  </LI></UL></DIV></DIV></DIV></DIV></DIV>
+<DIV id=btn-addhuanjie style="DISPLAY: none">
+<DIV id=dv-huanjie></DIV><!--<div class="weui_cells_title">下一环节处理人员</div>
+    <div style="padding: 10px 15px;background: #fff;">
+        <a href="javascript:;" class="weui_btn weui_btn_blue" id="open-popup">选择下环节处理人</a>
+    </div>--></DIV><!--<div id="" class="weui-popup-container" style="bottom: 60px;height: auto;top: 0;">
+    <div class="weui-popup-overlay"></div>
+    <div class="weui-popup-modal">
+        <div id="dv-huanjie">
+
+        </div>
+        <div style="padding: 10px 15px;background: #fff;">
+            <a href="javascript:;" class="weui_btn weui_btn_blue close-popup">关闭</a>
+        </div>
+    </div>
+</div>-->
+<DIV id=dv-copyto></DIV></DIV>
+<DIV id=detail-footer-view>
+<DIV class=ht_footer_bar style="Z-INDEX: 9">
+<DIV class=ht_footer_bar_center><A id=btn-chuli 
+class="weui_btn weui_btn_primary">处理</A> <A id=btn-submit 
+class="weui_btn weui_btn_primary" style="MARGIN-TOP: 0px; DISPLAY: none">确定</A> 
+</DIV></DIV>
+<DIV class="weui-popup-container popup-bottom">
+<DIV class=weui-popup-overlay></DIV>
+<DIV class=weui-popup-modal>
+<DIV class=toolbar>
+<DIV class=toolbar-inner><A class="picker-button close-popup">关闭</A> 
+<H1 class=title></H1></DIV></DIV>
+<DIV class=modal-content>
+<DIV class=weui_grids><!--2018-07-19 流程退回到发起人时不显示暂缓办理--><A id=btn-temp 
+class="weui_grid js_grid">
+<DIV class=weui_grid_icon><IMG src="处理表单_mhtml_files/mhtBB25(1).tmp"> </DIV>
+<P class=weui_grid_label>暂缓办理 </P></A><A id=btn-stop class="weui_grid js_grid">
+<DIV class=weui_grid_icon><IMG src="处理表单_mhtml_files/mhtBB28(1).tmp"> </DIV>
+<P class=weui_grid_label>中止 </P></A><A id=btn-reject class="weui_grid js_grid">
+<DIV class=weui_grid_icon><IMG src="处理表单_mhtml_files/mhtBB3A(1).tmp"> </DIV>
+<P class=weui_grid_label>退回 
+</P></A><!----><!--字段editLocked=1的时候标识协同是转发的--></DIV></DIV></DIV></DIV></DIV></DIV>
+<DIV class="weui_toast weui_loading_toast">
+<DIV class=weui_loading>
+<DIV class="weui_loading_leaf weui_loading_leaf_0"></DIV>
+<DIV class="weui_loading_leaf weui_loading_leaf_1"></DIV>
+<DIV class="weui_loading_leaf weui_loading_leaf_2"></DIV>
+<DIV class="weui_loading_leaf weui_loading_leaf_3"></DIV>
+<DIV class="weui_loading_leaf weui_loading_leaf_4"></DIV>
+<DIV class="weui_loading_leaf weui_loading_leaf_5"></DIV>
+<DIV class="weui_loading_leaf weui_loading_leaf_6"></DIV>
+<DIV class="weui_loading_leaf weui_loading_leaf_7"></DIV>
+<DIV class="weui_loading_leaf weui_loading_leaf_8"></DIV>
+<DIV class="weui_loading_leaf weui_loading_leaf_9"></DIV>
+<DIV class="weui_loading_leaf weui_loading_leaf_10"></DIV>
+<DIV class="weui_loading_leaf weui_loading_leaf_11"></DIV></DIV>
+<P class=weui_toast_content>正在加载...</P></DIV>
+<DIV id=form-iframe-view 
+style="OVERFLOW: hidden; HEIGHT: 523px; MIN-HEIGHT: 523px; DISPLAY: none" 
+data-role="page">
+<DIV class="weui_navbar "><A id=btn-base class=weui_navbar_item>处理表单 </A><A 
+id=btn-form class="weui_navbar_item weui_bar_item_on">表单预览 </A><A id=btn-flow 
+class=weui_navbar_item>查看流程 </A></DIV><!-- /header --><IFRAME id=weui-iframe 
+class=cooperate-inner-iframe></IFRAME></DIV></BODY>
+
+<script type="text/javascript">
+	
+		
+ 
+   var today=new Date();//定义日期对象
+   var MM = today.getMonth()+1;//通过日期对象的getMonth()方法返回月
+   var dd = today.getDate();
+   var wk = "王康";
+   var dxb = "电信B191";
+   if(today.getHours()<6){
+       dd=dd-1;
+   }
+ 
+   //MM=checkTime(MM);
+   //dd=checkTime(dd);
+   /*
+   function checkTime(i)
+   {
+     if (i<10){
+       i="0" + i;
+     }
+     return i;
+   }
+   */
+   var vm = new Vue({
+     el: "#timejs",
+     data:{
+       month:MM,
+       day:dd,
+	   xm:wk,
+	   xym:localStorage.getItem("xym"),
+	   zym:localStorage.getItem("zym"),
+	   bj:dxb,
+	   dh:localStorage.getItem("dh"),
+     }
+   })
+   var vm = new Vue({
+     el: "#timejs2",
+     data:{
+       month:MM,
+       day:dd
+     }
+   })
+   var vm = new Vue({
+     el: "#timejs3",
+     data:{
+       month:MM,
+       day:dd
+     }
+   })
+   var vm = new Vue({
+     el: "#timejs4",
+     data:{
+       month:MM,
+       day:dd
+     }
+   })
+   var vm= new Vue({
+	   el:"#xm2",
+	   data:{
+		   xm:wk
+	   }
+   })
+   var vm= new Vue({
+   	   el:"#dym2",
+   	   data:{
+   		   dym:lh
+   	   }
+   })
+   
+</script>
+
+</HTML>
