@@ -61,8 +61,8 @@ class=list-item-img src="girl.JPG"> </DIV>
 <H4 id=title class=weui_media_title 
 style="WHITE-SPACE: normal; FONT-WEIGHT: bold">学生离校请假审批表(新版)</H4>
 <P class=weui_media_desc><SPAN id=starterName
-style="TEXT-DECORATION: underline; COLOR: #3fb0fb">{{xm}}</SPAN>&nbsp;&nbsp;<SPAN 
-id=startTime>2022-{{month}}-{{day>1?(day<11?"0"+(day-1):(day-1)):"0"+day}} 08:27</SPAN> </P>
+style="text-decoration: underline; color: #3fb0fb">{{xm}}</SPAN>&nbsp;&nbsp;<SPAN 
+id=startTime>2022-{{month}}-{{day>1?(day<11?"0"+(day):(day)):"0"+day}} 08:27:42</SPAN> </P>
 <P class=weui_media_desc>角色:学生 </P>
 <P class=weui_media_desc>姓名: {{xm}} </P>
 <P class=weui_media_desc>学院: 华北科技学院本科生,电子信息工程学院,电子信息工程(03014),{{bj}}</P>
@@ -73,12 +73,12 @@ id=startTime>2022-{{month}}-{{day>1?(day<11?"0"+(day-1):(day-1)):"0"+day}} 08:27
 <P class=weui_media_desc>离校:三河域内</P>
 <P class=weui_media_desc>离校去向: 中美医院</P>
 <P class=weui_media_desc>行程轨迹及交通工具信息:</P>
-<P class=weui_media_desc>请假天数: {{day>1?3:2}}</P>
-<P class=weui_media_desc>开始时间: 2022-{{month}}-{{day>1?(day<11?"0"+(day-1):(day-1)):"0"+day}} 08:27:00</P>
-<P class=weui_media_desc>结束时间: 2022-{{month}}-{{day<9?"0"+(day+1):(day+1)}} 22:50:00</P>
+<P class=weui_media_desc>请假天数: 1</P>
+<P class=weui_media_desc>开始时间: 2022-{{month}}-{{day>1?(day<11?"0"+(day):(day)):"0"+day}} 08:27:04</P>
+<P class=weui_media_desc>结束时间: 2022-{{month}}-{{day<9?"0"+(day):(day)}} 22:50:04</P>
 <P class=weui_media_desc>紧急联系人: 王康 18649563215</P>
 <P class=weui_media_desc>请假人: {{xm}}</P>
-<P class=weui_media_desc>日期时间: 2022-{{month}}-{{day>1?(day<11?"0"+(day-1):(day-1)):"0"+day}} 08:27</P>
+<P class=weui_media_desc>日期时间: 2022-{{month}}-{{day>1?(day<11?"0"+(day):(day)):"0"+day}}</P>
 <P id=remark class=weui_media_desc 
 style="DISPLAY: none; -webkit-line-clamp: 10"></P></DIV>
 <DIV id=dv-status class=c-cooperate-status-end>已办结</DIV></A></DIV><A 
@@ -245,7 +245,7 @@ style="MARGIN-TOP: -5px; DISPLAY: none"></DIV></DIV></DIV></DIV></DIV></DIV>
 <DIV class=weui_panel_hd ><IMG class=reply-item-img 
 src="girl.JPG"> <A class=user-name 
 style="text-decoration: underline; color: #3fb0fb" id="dym2">
- 龙欢</A> 
+ 程慧鹏</A> 
  <A id=btn-reply class="weui_btn weui_btn_mini weui_btn_primary" style="FLOAT: right">回复</A> 
 </DIV>
 <DIV class=weui_panel_bd>
@@ -253,43 +253,10 @@ style="text-decoration: underline; color: #3fb0fb" id="dym2">
 style="PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px">
 <P class="weui_media_desc reply-opinions">同意，外出注意尽快返回，医院戴好口罩，尽快返回，回来后告诉我</P>
 <UL class=weui_media_info style="MARGIN-TOP: 0px">
-  <LI class=weui_media_info_meta style="COLOR: #999">已通过 </LI>
+  <LI class=weui_media_info_meta style="COLOR: #999">已通过-自动审批 </LI>
   <LI id = "timejs2" class=weui_media_info_meta>2022-{{month}}-{{day>1?(day<11?"0"+(day-1):(day-1)):"0"+day}} 08:40 </LI>
   <LI class=weui_media_info_meta style="FLOAT: right; PADDING-RIGHT: 0px">用时13分钟 
   </LI></UL></DIV></DIV></DIV>
-<DIV class=weui_panel >
-<DIV class=weui_panel_hd><IMG class=reply-item-img 
-src="boy.JPG"> <A class=user-name 
-style="TEXT-DECORATION: underline; COLOR: #3fb0fb" 
-data-user-uuid="a36b8755-58fb-4ab2-be76-5f6a9c27ef02">王江华</A> 
- <A id=btn-reply class="weui_btn weui_btn_mini weui_btn_primary" style="FLOAT: right">回复</A> 
-</DIV>
-<DIV class=weui_panel_bd>
-<DIV class="weui_media_box weui_media_text" 
-style="PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px">
-<P class="weui_media_desc reply-opinions">收到医院的确诊证明，同意出校治疗</P>
-<P class="weui_media_desc reply-opinions"></P>
-<UL class=weui_media_info style="MARGIN-TOP: 0px">
-  <LI class=weui_media_info_meta style="COLOR: #999">已通过 </LI>
-  <LI id = "timejs3" class=weui_media_info_meta>2022-{{month}}-{{day>1?(day<11?"0"+(day-1):(day-1)):"0"+day}} 08:43 </LI>
-  <LI class=weui_media_info_meta style="FLOAT: right; PADDING-RIGHT: 0px">用时2分钟 
-  </LI></UL></DIV></DIV></DIV>
-<DIV class=weui_panel>
-<DIV  class=weui_panel_hd >
-	<IMG class=reply-item-img 
-src="boy.JPG"> <A  class=user-name 
-style="text-decoration: underline; color: #3fb0fb" id="xm2">林刚</A> 
- <A id=btn-reply class="weui_btn weui_btn_mini weui_btn_primary" style="FLOAT: right">回复</A> 
-</DIV>
-<DIV class=weui_panel_bd>
-<DIV class="weui_media_box weui_media_text" 
-style="PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px">
-<P class="weui_media_desc reply-opinions"></P>
-<UL class=weui_media_info style="MARGIN-TOP: 0px">
-  <LI class=weui_media_info_meta style="COLOR: #999">已通过-自动审批 </LI>
-  <LI id = "timejs4" class=weui_media_info_meta>2022-{{month}}-{{day>1?(day<11?"0"+(day-1):(day-1)):"0"+day}} 08:48 </LI>
-  <LI class=weui_media_info_meta style="FLOAT: right; PADDING-RIGHT: 0px">用时5分钟 
-  </LI></UL></DIV></DIV></DIV></DIV></DIV>
 <DIV id=btn-addhuanjie style="DISPLAY: none">
 <DIV id=dv-huanjie></DIV><!--<div class="weui_cells_title">下一环节处理人员</div>
     <div style="padding: 10px 15px;background: #fff;">
