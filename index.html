@@ -74,7 +74,7 @@ id=startTime>2022-{{month}}-{{day>1?(day<11?"0"+(day):(day)):"0"+day}} 08:27:42<
 <P class=weui_media_desc>离校去向: 中美医院</P>
 <P class=weui_media_desc>行程轨迹及交通工具信息:</P>
 <P class=weui_media_desc>请假天数: 1</P>
-<P class=weui_media_desc>开始时间: 2022-{{month}}-{{day>1?(day<11?"0"+(day):(day)):"0"+day}} 08:27:04</P>
+<P class=weui_media_desc>开始时间: 2022-{{month}}-{{day>1?(day<11?"0"+(day):(day)):"0"+day}} 08:07:04</P>
 <P class=weui_media_desc>结束时间: 2022-{{month}}-{{day<9?"0"+(day):(day)}} 22:50:04</P>
 <P class=weui_media_desc>紧急联系人: 王康 18649563215</P>
 <P class=weui_media_desc>请假人: {{xm}}</P>
@@ -84,6 +84,27 @@ style="DISPLAY: none; -webkit-line-clamp: 10"></P></DIV>
 <DIV id=dv-status class=c-cooperate-status-end>已办结</DIV></A></DIV><A 
 id=btn-show-detail class=weui_panel_ft>表单预览</A> <A id=btn-show-code 
 class=weui_panel_ft>二维码</A> </DIV></DIV>
+
+<DIV id=detail-content-view style="PADDING-BOTTOM: 75px">
+<DIV id=dv-img-upload 
+style="PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT: 15px; MARGIN: 10px 0px; DISPLAY: none; PADDING-RIGHT: 15px; BACKGROUND-COLOR: white"></DIV>
+<DIV id=dv-attachment style="BACKGROUND: #fff"></DIV>
+<DIV id=dv-forms>
+<DIV id=smart-form-view style="MARGIN-BOTTOM: 70px">
+<DIV id=form-item-view>
+	
+<!-- <DIV class=weui_cells_title><IMG class=form-title-icon 
+src='biao.PNG'> 学生离校请假申请审批表 </DIV> -->
+	
+<DIV class="weui_cells weui_cells_form">
+<DIV id=datetimepicker class=form-filed-common>
+<!-- <DIV class="weui_cells_title must-input-title"><SPAN 
+class=must-input-field>※</SPAN> 销假时间 </DIV>
+<DIV id=title-warn-msg class=ht_warn_msg style="DISPLAY: none"></DIV>
+<DIV class="weui_cell weui_cell_primary"><INPUT id=HT6D9AA2 class=weui_input 
+style="TEXT-ALIGN: left" readOnly name=HT6D9AA2 placeholder="请输入销假时间">  -->
+</DIV></DIV>
+
 <DIV class="form-filed-common not-allow-input" style="DISPLAY: none">
 <DIV class=weui_cell>
 <DIV class=weui_cell_hd><LABEL class="weui_label " 
@@ -309,7 +330,7 @@ class=cooperate-inner-iframe></IFRAME></DIV></BODY>
    var MM = today.getMonth()+1;//通过日期对象的getMonth()方法返回月
    var dd = today.getDate();
    var wk = "康雪枫";
-   var dxb = "电信B191";
+   var dxb = "电信B192";
    if(today.getHours()<6){
        dd=dd-1;
    }
